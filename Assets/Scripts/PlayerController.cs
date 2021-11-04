@@ -8,9 +8,15 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 movement;
     public float maxSpeed = 1f;
-    
+    public FloatValue healthMax;
+    public float health;
+
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        health = healthMax.RuntimeValue;
+    }
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -21,6 +27,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         movement = new Vector2(0, Input.GetAxis("Vertical"));
+        if (health <= 0)
+            this.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
@@ -37,4 +45,9 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddRelativeForce(direction * speed);
     }
+    public void OnCollisionEnter2D(Collision2D other) //For collisions, can be used to detroy the player ship via running into ships or projectiles
+    {
+        health -= 10;
+    }
+
 }
