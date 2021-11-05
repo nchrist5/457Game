@@ -1226,3 +1226,4 @@ MonoBehaviour:
   playerFirePoint: {fileID: 453275602}
   LaserProjectile: {fileID: 3197336105446504775, guid: 28b9249edb74f6b4cbb985fc20d7a148,
     type: 3}
+  laser_speed: 17.5

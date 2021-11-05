@@ -7,6 +7,8 @@ public class PlayerWeapon : MonoBehaviour
     public Transform playerFirePoint;
     public GameObject LaserProjectile;
 
+    public float laser_speed = 15f;
+
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +23,8 @@ public class PlayerWeapon : MonoBehaviour
     //playerfirepoint is child of SpaceShip, dictates where projectile spawns
     void Shoot()
     {
-        Instantiate(LaserProjectile, playerFirePoint.position, playerFirePoint.rotation);
+        GameObject laser = Instantiate(LaserProjectile, playerFirePoint.position, playerFirePoint.rotation);
+        Rigidbody2D rb = laser.GetComponent<Rigidbody2D>();
+        rb.AddForce(playerFirePoint.up * laser_speed, ForceMode2D.Impulse);
     }
 }
