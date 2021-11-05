@@ -45,9 +45,41 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddRelativeForce(direction * speed);
     }
+
     public void OnCollisionEnter2D(Collision2D other) //For collisions, can be used to detroy the player ship via running into ships or projectiles
     {
         health -= 10;
+    }
+
+    //side-to-side teleport & top-to-bottom teleport
+    //checks tag of walls and sets player position to opposite wall upon trigger detection
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        Vector2 pos = transform.position;
+
+        if (other.tag == "NorthWall")
+        {
+            pos[1] = -4.5f;
+            transform.position = pos;
+        }
+
+        if (other.tag == "SouthWall")
+        {
+            pos[1] = 4.5f;
+            transform.position = pos;
+        }
+
+        if (other.tag == "WestWall")
+        {
+            pos[0] = 8.4f;
+            transform.position = pos;
+        }
+
+        if (other.tag == "EastWall")
+        {
+            pos[0] = -8.4f;
+            transform.position = pos;
+        }
     }
 
 }
