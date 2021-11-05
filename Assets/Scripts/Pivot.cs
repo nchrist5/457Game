@@ -8,11 +8,6 @@ public class Pivot : MonoBehaviour
     public GameObject player;
     private Vector3 target;
 
-    void Start()
-    {
-        Cursor.visible = false;
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {

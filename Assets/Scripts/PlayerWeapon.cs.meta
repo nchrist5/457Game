@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 3fadeac7f12055641b5f1b85486236d8
+guid: 9bd23574644e66f40b1790e60bc00244
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - rb: {instanceID: 0}
-  - healthMax: {fileID: 11400000, guid: 8faef92ce18cf604db707237d1c824de, type: 2}
+  - playerFirePoint: {instanceID: 0}
+  - LaserProjectile: {fileID: 3197336105446504775, guid: 28b9249edb74f6b4cbb985fc20d7a148,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
