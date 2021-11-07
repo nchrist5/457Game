@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9093864989188354644}
   - component: {fileID: 726780820005572052}
   m_Layer: 0
-  m_Name: LaserProjectile
+  m_Name: EnemyLaserProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c484a7d830344c04e9b10224199a1bd9, type: 3}
+  m_Sprite: {fileID: 6528185771036175570, guid: 4bbbb51645c63da4292ce42dfd42cd46,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
