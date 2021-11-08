@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
       propertyPath: laser_speed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b93ceaa81ed944dbdd50917375469b, type: 3}
@@ -1066,7 +1066,7 @@ PrefabInstance:
     - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
       propertyPath: laser_speed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b93ceaa81ed944dbdd50917375469b, type: 3}
@@ -1308,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
       propertyPath: laser_speed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b93ceaa81ed944dbdd50917375469b, type: 3}

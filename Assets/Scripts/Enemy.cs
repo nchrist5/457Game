@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 1f;
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
-    public float laser_speed = 100f;
+    public float laser_speed = 10f;
     private Rigidbody2D rb;
     private Rigidbody2D laserBody;
     private Vector2 movement;
