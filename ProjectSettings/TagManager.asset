@@ -9,6 +9,9 @@ TagManager:
   - EastWall
   - SouthWall
   - NorthWall
+  - Enemy
+  - EnemyProjectile
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX
