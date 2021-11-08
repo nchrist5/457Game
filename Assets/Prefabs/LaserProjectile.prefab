@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 726780820005572052}
   m_Layer: 0
   m_Name: LaserProjectile
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: acc6c99edf14cb349b151617cd743821, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0

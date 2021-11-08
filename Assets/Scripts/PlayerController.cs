@@ -46,11 +46,6 @@ public class PlayerController : MonoBehaviour
         rb.AddRelativeForce(direction * speed);
     }
 
-    public void OnCollisionEnter2D(Collision2D other) //For collisions, can be used to detroy the player ship via running into ships or projectiles
-    {
-        health -= 10;
-    }
-
     //side-to-side teleport & top-to-bottom teleport
     //checks tag of walls and sets player position to opposite wall upon trigger detection
     public void OnTriggerEnter2D(Collider2D other)
@@ -80,6 +75,13 @@ public class PlayerController : MonoBehaviour
             pos[0] = -8.4f;
             transform.position = pos;
         }
-    }
 
+        //This block of code checks if a enemy laser is hitting the ship
+        Transform rootT = other.gameObject.transform.root;
+        GameObject go = rootT.gameObject;
+        if (go.CompareTag("EnemyProjectile"))
+        {
+            health -= 10;
+        }
+    }
 }

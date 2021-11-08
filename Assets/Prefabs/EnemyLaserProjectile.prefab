@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 889081408033637743}
   - component: {fileID: 5955974295682900908}
   - component: {fileID: 6940080354200173463}
-  - component: {fileID: 898371096417481185}
   - component: {fileID: 9093864989188354644}
   - component: {fileID: 726780820005572052}
+  - component: {fileID: 4863720837578911310}
   m_Layer: 0
   m_Name: EnemyLaserProjectile
-  m_TagString: Untagged
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,18 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &898371096417481185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7744196406864173931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce87feaf90088ba4c9f0f46492ca60f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &9093864989188354644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131,7 +119,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: acc6c99edf14cb349b151617cd743821, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -231,3 +219,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.11, y: 0.32}
   m_Direction: 0
+--- !u!114 &4863720837578911310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744196406864173931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a95a69393119b4c9b795974f97b8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
