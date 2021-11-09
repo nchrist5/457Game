@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Assign Manually")]
     public Transform player;
-    public float moveSpeed = 1f;
-    public float fireRate = 0.5f;
-    private float nextFire = 0.0f;
-    public float laser_speed = 10f;
     private Rigidbody2D rb;
     private Rigidbody2D laserBody;
     private Vector2 movement;
     public GameObject LaserProjectile;
     public FloatValue healthMax;
+    [Header("Initialized At Start")]
     public float health;
+    [Header("Stats To Modify")]
+    public float moveSpeed = 1f;
+    public float fireRate = 0.5f;
+    private float nextFire = 0.0f;
+    public float laser_speed = 10f;
 
     private void Awake()
     {
@@ -70,7 +73,8 @@ public class Enemy : MonoBehaviour
         GameObject go = rootT.gameObject;
         if (go.CompareTag("PlayerProjectile"))
         {
-            health -= 10;
+            float damageTaken = other.GetComponent<PlayerProjectile>().damage;
+            health -= damageTaken;
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerProjectile : MonoBehaviour
 {
+    public float damage;
     private void OnTriggerEnter2D(Collider2D other)
     {
         Transform rootT = other.gameObject.transform.root;

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f;
+    [Header("Movement Stuff")]
     public Rigidbody2D rb;
     public Vector2 movement;
+    [Header("Player Stats")]
+    public float speed = 5.0f;
     public float maxSpeed = 1f;
     public FloatValue healthMax;
+    [Header("Assigned At Start")]
     public float health;
 
 
@@ -81,7 +84,8 @@ public class PlayerController : MonoBehaviour
         GameObject go = rootT.gameObject;
         if (go.CompareTag("EnemyProjectile"))
         {
-            health -= 10;
+            float damageTaken = other.GetComponent<EnemyProjectile>().damage;
+            health -= damageTaken;
         }
     }
 }

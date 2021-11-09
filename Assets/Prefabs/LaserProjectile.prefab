@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 898371096417481185}
   - component: {fileID: 9093864989188354644}
   - component: {fileID: 726780820005572052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LaserProjectile
   m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce87feaf90088ba4c9f0f46492ca60f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!82 &9093864989188354644
 AudioSource:
   m_ObjectHideFlags: 0

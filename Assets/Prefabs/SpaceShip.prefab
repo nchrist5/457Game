@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746246337336232496}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerFirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 746246339197604911}
   - component: {fileID: 746246339197604915}
   - component: {fileID: 746246339197604912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpaceShip
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -129,10 +129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fadeac7f12055641b5f1b85486236d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   rb: {fileID: 746246339197604911}
   movement: {x: 0, y: 0}
+  speed: 10
   maxSpeed: 5
+  damage: 10
   healthMax: {fileID: 11400000, guid: 8faef92ce18cf604db707237d1c824de, type: 2}
   health: 0
 --- !u!114 &746246339197604914
