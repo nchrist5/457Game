@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3426069261513194330}
   - component: {fileID: 3426069261513194331}
   - component: {fileID: -6233698069364804818}
-  - component: {fileID: 4446759668817634605}
   m_Layer: 8
   m_Name: BasicEnemy
   m_TagString: Enemy
@@ -107,7 +106,6 @@ MonoBehaviour:
   moveSpeed: 1
   fireRate: 0.5
   laser_speed: 10
-  damage: 10
 --- !u!50 &3426069261513194330
 Rigidbody2D:
   serializedVersion: 4
@@ -181,23 +179,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.875}
   m_EdgeRadius: 0
---- !u!114 &4446759668817634605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3426069261513194662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8013680e65574d64696c7f58363fe79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  LaserProjectile: {fileID: 0}
-  healthMax: {fileID: 0}
-  health: 0
-  moveSpeed: 1
-  fireRate: 0.5
-  laser_speed: 10
-  damage: 0

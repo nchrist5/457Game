@@ -28,14 +28,14 @@ public class Enemy : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
     }
-    
+
 
     // Update is called once per frame
     void Update()
     {
         if (health <= 0)
         {
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
 
         if (player.gameObject.activeSelf == true)
@@ -45,22 +45,22 @@ public class Enemy : MonoBehaviour
             rb.rotation = angle;
             direction.Normalize();
             movement = direction;
-            
+
             if (Time.time > nextFire)
             {
-                
+
                 nextFire = Time.time + fireRate;
                 GameObject Laser = Instantiate(LaserProjectile, transform.position, transform.rotation) as GameObject;
                 laserBody = Laser.GetComponent<Rigidbody2D>();
                 laserBody.AddForce(direction * laser_speed, ForceMode2D.Impulse);
             }
-            
+
         }
     }
     private void FixedUpdate()
     {
         moveCharacter(movement);
-        
+
     }
     void moveCharacter(Vector2 direction)
     {
@@ -76,5 +76,9 @@ public class Enemy : MonoBehaviour
             float damageTaken = other.GetComponent<PlayerProjectile>().damage;
             health -= damageTaken;
         }
+    }
+    public void Spawn()
+    {
+        gameObject.SetActive(true);
     }
 }
