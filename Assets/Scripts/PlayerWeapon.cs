@@ -8,13 +8,16 @@ public class PlayerWeapon : MonoBehaviour
     public GameObject LaserProjectile;
 
     public float laser_speed = 15f;
+    public float playerFireRate = 0.2f;
+    private float playerNextFire = 0.0f;
 
     // Update is called once per frame
     void Update()
     {
-        //fire1 bound to left click
-        if (Input.GetButtonDown("Fire1"))
+        //hold (or click) left mouse to fire
+        if ((Input.GetButton("Fire1")) && (Time.time > playerNextFire))
         {
+            playerNextFire = Time.time + playerFireRate;
             Shoot();
         }
     }
