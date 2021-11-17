@@ -1040,11 +1040,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fadeac7f12055641b5f1b85486236d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthText: {fileID: 0}
   rb: {fileID: 1779937741}
   movement: {x: 0, y: 0}
   speed: 10
   maxSpeed: 5
   healthMax: {fileID: 0}
+  immunity: 0
   health: 0
 --- !u!50 &1779937741
 Rigidbody2D:

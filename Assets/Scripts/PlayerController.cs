@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header ("UI elements")]
+    public Text healthText;
     [Header("Movement Stuff")]
     public Rigidbody2D rb;
     public Vector2 movement;
@@ -11,8 +14,13 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     public float maxSpeed = 1f;
     public FloatValue healthMax;
+    [Header("Shield once hit")]
+    public float immunity;
+    private bool immunityOn;
     [Header("Assigned At Start")]
     public float health;
+    
+
 
 
     // Start is called before the first frame update
@@ -24,6 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         Cursor.visible = false;
+        immunityOn = false;
     }
 
     // Update is called once per frame
@@ -82,10 +91,21 @@ public class PlayerController : MonoBehaviour
         //This block of code checks if a enemy laser is hitting the ship
         Transform rootT = other.gameObject.transform.root;
         GameObject go = rootT.gameObject;
-        if (go.CompareTag("EnemyProjectile"))
+        if (go.CompareTag("EnemyProjectile") || go.CompareTag("Enemy"))
         {
-            float damageTaken = other.GetComponent<EnemyProjectile>().damage;
-            health -= damageTaken;
+            if (!immunityOn)
+            {
+                StartCoroutine(damaged());
+                float damageTaken = other.GetComponent<EnemyProjectile>().damage;
+                health -= damageTaken;
+                healthText.text = "Health: " + health;
+            }
         }
+    }
+    IEnumerator damaged()
+    {
+        immunityOn = true;
+        yield return new WaitForSeconds(immunity);
+        immunityOn = false;
     }
 }
