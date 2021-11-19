@@ -200,6 +200,12 @@ PrefabInstance:
       objectReference: {fileID: 1779937743}
     - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 4461223615154042455, guid: 5af9997c55753254c9aeadbe5b4549db,
+        type: 3}
+    - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
+        type: 3}
       propertyPath: laser_speed
       value: 10
       objectReference: {fileID: 0}
@@ -601,6 +607,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1779937743}
+    - target: {fileID: 3426069261513194663, guid: b3f8665ee361ac74c95bcf2a3890c207,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 4461223615154042455, guid: 5af9997c55753254c9aeadbe5b4549db,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3f8665ee361ac74c95bcf2a3890c207, type: 3}
 --- !u!1001 &746246337419847138
@@ -858,6 +870,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1779937743}
+    - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 4461223615154042455, guid: 5af9997c55753254c9aeadbe5b4549db,
+        type: 3}
     - target: {fileID: 3426069261513194663, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
       propertyPath: laser_speed
