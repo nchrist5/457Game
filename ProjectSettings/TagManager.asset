@@ -12,6 +12,8 @@ TagManager:
   - Enemy
   - EnemyProjectile
   - PlayerProjectile
+  - Tutorial Wall
+  - TutorialCheckpoint
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - EnemyProjectile
   - Player
   - PlayerProjectile
-  - 
+  - Tutorial Wall
   - 
   - 
   - 

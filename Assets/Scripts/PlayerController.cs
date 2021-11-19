@@ -87,6 +87,10 @@ public class PlayerController : MonoBehaviour
             pos[0] = -8.4f;
             transform.position = pos;
         }
+        if(other.tag == "TutorialCheckpoint")
+        {
+            Destroy(other);
+        }
 
         //This block of code checks if a enemy laser is hitting the ship
         Transform rootT = other.gameObject.transform.root;
