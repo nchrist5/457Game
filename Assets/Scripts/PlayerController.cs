@@ -104,6 +104,14 @@ public class PlayerController : MonoBehaviour
                 health -= damageTaken;
                 healthText.text = "Health: " + health;
             }
+            
+        }
+        if (go.CompareTag("HealthPickup"))
+        {
+            print("Healed 10");
+            health += 10f;
+            healthText.text = "Health: " + health;
+            Destroy(go);
         }
     }
     IEnumerator damaged()

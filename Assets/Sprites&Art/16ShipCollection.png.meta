@@ -323,6 +323,21 @@ TextureImporter:
   - first:
       213: -5855809015920674456
     second: Pink Star 4
+  - first:
+      213: 4143497647689082209
+    second: Health Pickup 1
+  - first:
+      213: -8845736915631986179
+    second: Health Pickup 2
+  - first:
+      213: -1127589094146997357
+    second: Health Pickup 3
+  - first:
+      213: 2769713138676468162
+    second: Health Pickup 4
+  - first:
+      213: 533149449778042799
+    second: Health Pickup 5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2662,6 +2677,111 @@ TextureImporter:
       bones: []
       spriteID: 869b485b9bcfbbea0800000000000000
       internalID: -5855809015920674456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Pickup 1
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 58
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165ac2a4829a08930800000000000000
+      internalID: 4143497647689082209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Pickup 2
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 59
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df922375421ad3580800000000000000
+      internalID: -8845736915631986179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Pickup 3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 60
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39383ce61bff950f0800000000000000
+      internalID: -1127589094146997357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Pickup 4
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 61
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c90b80dc6fff6620800000000000000
+      internalID: 2769713138676468162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Pickup 5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7173e8990266700800000000000000
+      internalID: 533149449778042799
       vertices: []
       indices: 
       edges: []
