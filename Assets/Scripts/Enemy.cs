@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
     public float laser_speed = 10f;
+    [Header("Effects")]
+    public GameObject deathEffect;
+    private float deathEffectDelay = 1f;
 
     private void Awake()
     {
@@ -35,6 +38,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            DeathEffect();
             Destroy(this.gameObject);
         }
 
@@ -80,5 +84,13 @@ public class Enemy : MonoBehaviour
     public void Spawn()
     {
         gameObject.SetActive(true);
+    }
+    public void DeathEffect()
+    {
+        if (deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, deathEffectDelay);
+        }
     }
 }

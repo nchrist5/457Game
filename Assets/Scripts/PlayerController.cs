@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
     [Header ("UI elements")]
     public Text healthText;
+    public Text livesText;
     [Header("Movement Stuff")]
     public Rigidbody2D rb;
     public Vector2 movement;
@@ -19,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private bool immunityOn;
     [Header("Assigned At Start")]
     public float health;
+
+    public static int lives = 3;
     
 
 
@@ -27,6 +32,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         health = healthMax.RuntimeValue;
+        livesText = GameObject.Find( "livesText" ).GetComponent<Text>();
+        livesText.text = "Lives: " + lives;   
     }
     void Start()
     {
@@ -40,7 +47,21 @@ public class PlayerController : MonoBehaviour
     {
         movement = new Vector2(0, Input.GetAxis("Vertical"));
         if (health <= 0)
-            this.gameObject.SetActive(false);
+        {
+            //check if player has remaining lives
+            if (lives > 0)
+            {
+                lives--;
+                livesText.text = "Lives: " + lives;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            //if player has 0 lives 
+            else
+            {
+                SceneManager.LoadScene("Home");
+            }
+        }
+            
     }
 
     void FixedUpdate()
@@ -87,6 +108,10 @@ public class PlayerController : MonoBehaviour
             pos[0] = -8.4f;
             transform.position = pos;
         }
+        if(other.tag == "TutorialCheckpoint")
+        {
+            Destroy(other);
+        }
 
         //This block of code checks if a enemy laser is hitting the ship
         Transform rootT = other.gameObject.transform.root;
@@ -100,6 +125,14 @@ public class PlayerController : MonoBehaviour
                 health -= damageTaken;
                 healthText.text = "Health: " + health;
             }
+            
+        }
+        if (go.CompareTag("HealthPickup"))
+        {
+            print("Healed 10");
+            health += 10f;
+            healthText.text = "Health: " + health;
+            Destroy(go);
         }
     }
     IEnumerator damaged()

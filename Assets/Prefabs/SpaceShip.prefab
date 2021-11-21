@@ -130,13 +130,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fadeac7f12055641b5f1b85486236d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthText: {fileID: 0}
+  livesText: {fileID: 0}
   rb: {fileID: 746246339197604911}
   movement: {x: 0, y: 0}
   speed: 10
   maxSpeed: 5
   healthMax: {fileID: 11400000, guid: 8faef92ce18cf604db707237d1c824de, type: 2}
+  lives: 2
+  immunity: 0
   health: 0
-  healthText: {fileID: 0}
 --- !u!114 &746246339197604914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +237,7 @@ MonoBehaviour:
   LaserProjectile: {fileID: 7744196406864173931, guid: 28b9249edb74f6b4cbb985fc20d7a148,
     type: 3}
   laser_speed: 17.5
+  playerFireRate: 0.2
 --- !u!60 &4235914710710215682
 PolygonCollider2D:
   m_ObjectHideFlags: 0
