@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             //if player has 0 lives 
             else
             {
-                SceneManager.LoadScene("Home");
+                SceneManager.LoadScene("GameOver");
             }
         }
             
