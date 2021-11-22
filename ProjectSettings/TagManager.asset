@@ -3,7 +3,6 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - Crosshair
   - WestWall
@@ -16,9 +15,6 @@ TagManager:
   - Tutorial Wall
   - TutorialCheckpoint
   - HealthPickup
-=======
-  tags: []
->>>>>>> 206790101ddb0e76409e7daf11f5f527f3e1aae6
   layers:
   - Default
   - TransparentFX
@@ -53,7 +49,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-<<<<<<< HEAD
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background1
     uniqueID: 3381137607
     locked: 0
@@ -69,8 +67,4 @@ TagManager:
   - name: background2
     uniqueID: 3214248833
     locked: 0
-=======
->>>>>>> 206790101ddb0e76409e7daf11f5f527f3e1aae6
-  - name: Default
-    uniqueID: 0
-    locked: 0
+
