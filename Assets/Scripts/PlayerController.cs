@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             //if player has 0 lives 
             else
             {
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("Home");
             }
         }
             
@@ -138,7 +138,9 @@ public class PlayerController : MonoBehaviour
     IEnumerator damaged()
     {
         immunityOn = true;
+        GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(immunity);
+        GetComponent<SpriteRenderer>().color = Color.white;
         immunityOn = false;
     }
 }

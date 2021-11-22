@@ -236,6 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 5779661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95f129c656eb83345af55f52476c2fc8, type: 3}
+<<<<<<< HEAD
 --- !u!1 &391181652
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +318,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 77839ec8828faf219d40d80e9b1e557b1b4a019e
 --- !u!1001 &542645044
 PrefabInstance:
   m_ObjectHideFlags: 0

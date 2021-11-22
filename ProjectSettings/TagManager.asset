@@ -14,7 +14,6 @@ TagManager:
   - PlayerProjectile
   - Tutorial Wall
   - TutorialCheckpoint
-  - HealthPickup
   layers:
   - Default
   - TransparentFX
@@ -49,6 +48,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+<<<<<<< HEAD
   - name: Background4
     uniqueID: 2484115289
     locked: 0
@@ -64,6 +64,8 @@ TagManager:
   - name: background2
     uniqueID: 3214248833
     locked: 0
+=======
+>>>>>>> 77839ec8828faf219d40d80e9b1e557b1b4a019e
   - name: Default
     uniqueID: 0
     locked: 0
