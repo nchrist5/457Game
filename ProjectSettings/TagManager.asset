@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Crosshair
-  - WestWall
-  - EastWall
-  - SouthWall
-  - NorthWall
-  - Enemy
-  - EnemyProjectile
-  - PlayerProjectile
-  - Tutorial Wall
-  - TutorialCheckpoint
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - Enemy
-  - EnemyProjectile
-  - Player
-  - PlayerProjectile
-  - Tutorial Wall
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -48,24 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-<<<<<<< HEAD
-  - name: Background4
-    uniqueID: 2484115289
-    locked: 0
-  - name: background3
-    uniqueID: 877898991
-    locked: 0
-  - name: background22
-    uniqueID: 2360542665
-    locked: 0
-  - name: Background1
-    uniqueID: 3381137607
-    locked: 0
-  - name: background2
-    uniqueID: 3214248833
-    locked: 0
-=======
->>>>>>> 77839ec8828faf219d40d80e9b1e557b1b4a019e
   - name: Default
     uniqueID: 0
     locked: 0

@@ -127,13 +127,14 @@ public class PlayerController : MonoBehaviour
             }
             
         }
-        if (go.CompareTag("HealthPickup"))
-        {
-            print("Healed 10");
-            health += 10f;
-            healthText.text = "Health: " + health;
-            Destroy(go);
-        }
+        //Not yet implemented. Commented out to remove error message on collisions.
+        // if (go.CompareTag("HealthPickup"))
+        // {
+        //     print("Healed 10");
+        //     health += 10f;
+        //     healthText.text = "Health: " + health;
+        //     Destroy(go);
+        // }
     }
     IEnumerator damaged()
     {
