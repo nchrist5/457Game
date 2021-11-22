@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TutorialCheckpoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Enemy enemy;
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter2D()
     {
-        Destroy(this);
+        Destroy(this.gameObject);
+        enemy.Spawn();
     }
 }
