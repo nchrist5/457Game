@@ -19,7 +19,7 @@ public class RestartGame : MonoBehaviour
 
     public void LoadGame()
     {
+        PlayerController.lives = 3;
         SceneManager.LoadScene("Home");
-    
     }
 }
