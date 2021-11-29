@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header ("UI elements")]
+    [Header("UI elements")]
     public Text healthText;
     public Text livesText;
     [Header("Movement Stuff")]
@@ -17,23 +17,27 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     public float maxSpeed = 1f;
     public FloatValue healthMax;
-    [Header("Shield once hit")]
-    public float immunity;
+    public PlayerProjectile myProjectile;
+    public FloatValue shieldMax;
     private bool immunityOn;
     [Header("Assigned At Start")]
     public float health;
-
+    public float shield;
     public static int lives = 3;
-    
+    public float damage;
+
 
 
 
     // Start is called before the first frame update
     private void Awake()
     {
+        damage = myProjectile.damageMax.RuntimeValue;
+        shield = shieldMax.RuntimeValue;
         health = healthMax.RuntimeValue;
-        livesText = GameObject.Find( "livesText" ).GetComponent<Text>();
-        livesText.text = "Lives: " + lives;   
+        healthText.text = "Health: " + health;
+        livesText = GameObject.Find("livesText").GetComponent<Text>();
+        livesText.text = "Lives: " + lives;
     }
     void Start()
     {
@@ -61,7 +65,7 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene("GameOver");
             }
         }
-            
+
     }
 
     void FixedUpdate()
@@ -74,7 +78,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void movePlayer(Vector2 direction) 
+    void movePlayer(Vector2 direction)
     {
         rb.AddRelativeForce(direction * speed);
     }
@@ -108,7 +112,7 @@ public class PlayerController : MonoBehaviour
             pos[0] = -8.4f;
             transform.position = pos;
         }
-        if(other.tag == "TutorialCheckpoint")
+        if (other.tag == "TutorialCheckpoint")
         {
             Destroy(other);
         }
@@ -125,7 +129,7 @@ public class PlayerController : MonoBehaviour
                 health -= damageTaken;
                 healthText.text = "Health: " + health;
             }
-            
+
         }
         //Not yet implemented. Commented out to remove error message on collisions.
         // if (go.CompareTag("HealthPickup"))
@@ -140,7 +144,7 @@ public class PlayerController : MonoBehaviour
     {
         immunityOn = true;
         GetComponent<SpriteRenderer>().color = Color.red;
-        yield return new WaitForSeconds(immunity);
+        yield return new WaitForSeconds(shield);
         GetComponent<SpriteRenderer>().color = Color.white;
         immunityOn = false;
     }
