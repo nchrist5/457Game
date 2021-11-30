@@ -8,8 +8,14 @@ public class WaveSystem : MonoBehaviour
 {
     [Header("Scene to transition to")]
     public string Scene;
+    public float transitionTime;
     [Header("Number of waves wanted")]
     public Wave[] waves;
+
+    public void Start()
+    {
+        transitionTime = 1f;
+    }
 
     public void Update()
     {
@@ -26,8 +32,13 @@ public class WaveSystem : MonoBehaviour
     {
         if (AreWavesOver())
         {
+            
+            transitionTime -= Time.deltaTime;
             // Battle is over!
-            SceneManager.LoadScene(Scene);
+            if (transitionTime < Time.deltaTime)
+            {
+                SceneManager.LoadScene(Scene);
+            }
         }
 
     }

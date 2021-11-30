@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (health <= 0)
         {
@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
 
         }
     }
-    private void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         moveCharacter(movement);
 
