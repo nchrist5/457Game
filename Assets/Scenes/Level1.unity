@@ -721,6 +721,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 898371096417481185, guid: 28b9249edb74f6b4cbb985fc20d7a148,
         type: 3}
+    - target: {fileID: 746246339197604911, guid: 95f129c656eb83345af55f52476c2fc8,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f11b658fe80390d4aa53a09d213c660e, type: 2}
     - target: {fileID: 746246339197604914, guid: 95f129c656eb83345af55f52476c2fc8,
         type: 3}
       propertyPath: crosshair
@@ -829,6 +834,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1641794765}
     m_Modifications:
+    - target: {fileID: 3426069261513194330, guid: 04b93ceaa81ed944dbdd50917375469b,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: af523c05fceebce4cb7e95a3947a7d8a, type: 2}
     - target: {fileID: 3426069261513194661, guid: 04b93ceaa81ed944dbdd50917375469b,
         type: 3}
       propertyPath: m_RootOrder
