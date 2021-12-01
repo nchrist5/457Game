@@ -98,14 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  LaserProjectile: {fileID: 7744196406864173931, guid: e80ed86531f1a9d4ca8c1edef6f2e9cf,
+  LaserProjectile: {fileID: 7744196406864173931, guid: e13ff95b188498741b66946f0ae13266,
     type: 3}
   healthMax: {fileID: 11400000, guid: e5e5e6ff6b9d8314aaeb9f2d538a76a0, type: 2}
   health: 0
   moveSpeed: 1
   fireRate: 0.5
   laser_speed: 10
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 2354198728709431265, guid: 5af9997c55753254c9aeadbe5b4549db,
+    type: 3}
 --- !u!50 &3426069261513194330
 Rigidbody2D:
   serializedVersion: 4
