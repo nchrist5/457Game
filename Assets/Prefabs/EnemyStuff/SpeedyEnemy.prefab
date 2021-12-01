@@ -102,8 +102,9 @@ MonoBehaviour:
     type: 3}
   healthMax: {fileID: 11400000, guid: d38b801bc3d64ea4694d39618a88f6c8, type: 2}
   health: 0
-  moveSpeed: 10
+  moveSpeed: 5
   fireRate: 0.5
+  rotationSpeed: 300
   laser_speed: 12.5
   deathEffect: {fileID: 2354198728709431265, guid: 5af9997c55753254c9aeadbe5b4549db,
     type: 3}
@@ -127,7 +128,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3426069261513194331
 BoxCollider2D:
   m_ObjectHideFlags: 0

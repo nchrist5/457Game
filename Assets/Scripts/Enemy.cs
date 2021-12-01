@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [Header("Stats To Modify")]
     public float moveSpeed = 1f;
     public float fireRate = 0.5f;
+    public float rotationSpeed = 100f;
     private float nextFire = 0.0f;
     public float laser_speed = 10f;
     [Header("Effects")]
@@ -44,9 +45,11 @@ public class Enemy : MonoBehaviour
 
         if (player.gameObject.activeSelf == true)
         {
-            Vector3 direction = player.position - transform.position;
+            Vector2 direction = player.position - transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            rb.rotation = angle;
+            //rb.rotation = Mathf.Lerp(rb.rotation, angle, rotationSpeed);
+            Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             direction.Normalize();
             movement = direction;
 
@@ -56,7 +59,9 @@ public class Enemy : MonoBehaviour
                 nextFire = Time.time + fireRate;
                 GameObject Laser = Instantiate(LaserProjectile, transform.position, transform.rotation) as GameObject;
                 laserBody = Laser.GetComponent<Rigidbody2D>();
-                laserBody.AddForce(direction * laser_speed, ForceMode2D.Impulse);
+                Vector2 laserDirection = transform.rotation.ToEulerAngles();
+                //laserBody.AddForce(laserBody.forward * laser_speed, ForceMode2D.Impulse);
+                Laser.GetComponent<Rigidbody2D>().velocity = transform.right * laser_speed;
             }
 
         }
