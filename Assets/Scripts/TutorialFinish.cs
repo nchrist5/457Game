@@ -17,6 +17,7 @@ public class TutorialFinish : MonoBehaviour
         }
         if (enemy.health <= 0 && shipHasSpawned == 1)
         {
+            PlayerController.lives = 3;
             SceneManager.LoadScene("Home");
         }
     }
