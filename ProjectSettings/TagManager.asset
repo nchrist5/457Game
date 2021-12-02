@@ -15,6 +15,7 @@ TagManager:
   - Tutorial Wall
   - TutorialCheckpoint
   - HealthPickup
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -67,4 +68,3 @@ TagManager:
   - name: background2
     uniqueID: 3214248833
     locked: 0
-
