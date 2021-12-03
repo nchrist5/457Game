@@ -33,10 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: fc9035dc9d0194c20ad83c3cdbbee282
   - enabled: 1
-    path: Assets/Scenes/Passive Menu7-8.unity
-    guid: cd4c21477bb59bb43863d26ac499e7ce
-  - enabled: 1
-    path: Assets/Scenes/Passive Menu5-6.unity
+    path: Assets/Scenes/Passive Menu.unity
     guid: 23cf2e6bff665404181f1ff45974f957
   - enabled: 1
     path: Assets/Scenes/Passive Menu1-2.unity
@@ -44,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Weapon Menu.unity
     guid: 426cadfb4ed0b4e9da126d91ea950f8d
+  - enabled: 1
+    path: Assets/Scenes/Passive Menu5-6.unity
+    guid: b7367f30511880b408df047ad4fc30d6
+  - enabled: 1
+    path: Assets/Scenes/Passive Menu7-8.unity
+    guid: cd4c21477bb59bb43863d26ac499e7ce
   m_configObjects: {}
