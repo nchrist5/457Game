@@ -5,8 +5,9 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - playerFirePoint: {instanceID: 0}
-  - LaserProjectile: {fileID: 3197336105446504775, guid: 28b9249edb74f6b4cbb985fc20d7a148,
-      type: 3}
+  - LaserProjectile: {instanceID: 0}
+  - shotgunProjectile: {instanceID: 0}
+  - grenadeProjectile: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

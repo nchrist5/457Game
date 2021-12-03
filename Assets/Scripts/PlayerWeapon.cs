@@ -7,15 +7,17 @@ public class PlayerWeapon : MonoBehaviour
     public Transform playerFirePoint;
     public GameObject LaserProjectile;
     public GameObject shotgunProjectile;
+    public GameObject grenadeProjectile;
     public float laser_speed = 15f;
     public float playerFireRate = 0.2f;
+    public float throwForce = 1f;
     private float playerNextFire = 0.0f;
 
-    public static bool defaultWeapon = true;
+    public static bool defaultWeapon = false;
     public static bool upgrade = false;
     public static bool railgun = false;
     public static bool shotgun = false;
-    public static bool grenade = false;
+    public static bool grenade = true;
 
     // Update is called once per frame
     void Update()
@@ -40,7 +42,9 @@ public class PlayerWeapon : MonoBehaviour
             }
             else if (grenade == true)
             {
-
+                GameObject grenadeObject = Instantiate(grenadeProjectile, playerFirePoint.transform.position, playerFirePoint.transform.rotation);
+                Rigidbody2D grenadeRigidbody = grenadeObject.GetComponent<Rigidbody2D>();
+                grenadeRigidbody.AddForce(playerFirePoint.up * throwForce, ForceMode2D.Impulse);
             }
             else
             {

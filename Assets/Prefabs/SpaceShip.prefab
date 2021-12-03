@@ -241,8 +241,11 @@ MonoBehaviour:
     type: 3}
   shotgunProjectile: {fileID: 7744196406864173931, guid: d9d6bebd14a221e4e8dcca263c8f8a05,
     type: 3}
+  grenadeProjectile: {fileID: 7744196406864173931, guid: 2ae3cd5aab8cb614698c4181b75a7977,
+    type: 3}
   laser_speed: 17.5
   playerFireRate: 0.2
+  throwForce: 3
 --- !u!60 &4235914710710215682
 PolygonCollider2D:
   m_ObjectHideFlags: 0
