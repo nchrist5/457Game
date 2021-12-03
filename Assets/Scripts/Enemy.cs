@@ -47,7 +47,6 @@ public class Enemy : MonoBehaviour
         {
             Vector2 direction = player.position - transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            //rb.rotation = Mathf.Lerp(rb.rotation, angle, rotationSpeed);
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             direction.Normalize();
@@ -60,7 +59,6 @@ public class Enemy : MonoBehaviour
                 GameObject Laser = Instantiate(LaserProjectile, transform.position, transform.rotation) as GameObject;
                 laserBody = Laser.GetComponent<Rigidbody2D>();
                 Vector2 laserDirection = transform.rotation.ToEulerAngles();
-                //laserBody.AddForce(laserBody.forward * laser_speed, ForceMode2D.Impulse);
                 Laser.GetComponent<Rigidbody2D>().velocity = transform.right * laser_speed;
             }
 
@@ -85,6 +83,11 @@ public class Enemy : MonoBehaviour
             float damageTaken = other.GetComponent<PlayerProjectile>().damage;
             health -= damageTaken;
         }
+    }
+
+    public void takeDamage(float damage)
+    {
+        health -= damage;
     }
     public void Spawn()
     {
