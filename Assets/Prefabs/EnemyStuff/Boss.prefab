@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3426069261513194330}
   - component: {fileID: 3426069261513194331}
   - component: {fileID: -6233698069364804818}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -104,6 +104,7 @@ MonoBehaviour:
   health: 0
   moveSpeed: 1
   fireRate: 0.5
+  rotationSpeed: 100
   laser_speed: 10
   deathEffect: {fileID: 2354198728709431265, guid: 5af9997c55753254c9aeadbe5b4549db,
     type: 3}
@@ -246,6 +247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WaveSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159870924711814754, guid: 8c7a38334a432544dbaddcb08f4a7db6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c7a38334a432544dbaddcb08f4a7db6, type: 3}

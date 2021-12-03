@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746246337336232496}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: PlayerFirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 746246339197604915}
   - component: {fileID: 746246339197604912}
   - component: {fileID: 4235914710710215682}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: SpaceShip
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -137,8 +137,9 @@ MonoBehaviour:
   speed: 10
   maxSpeed: 5
   healthMax: {fileID: 11400000, guid: 8faef92ce18cf604db707237d1c824de, type: 2}
-  myProjectile: {fileID: 0}
-  shieldMax: {fileID: 0}
+  myProjectile: {fileID: 898371096417481185, guid: 28b9249edb74f6b4cbb985fc20d7a148,
+    type: 3}
+  shieldMax: {fileID: 11400000, guid: 65938c5d61ea89a4aab36815b7ff2285, type: 2}
   health: 0
   shield: 0
   damage: 0
@@ -237,6 +238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerFirePoint: {fileID: 746246337336232496}
   LaserProjectile: {fileID: 7744196406864173931, guid: 28b9249edb74f6b4cbb985fc20d7a148,
+    type: 3}
+  shotgunProjectile: {fileID: 7744196406864173931, guid: d9d6bebd14a221e4e8dcca263c8f8a05,
     type: 3}
   laser_speed: 17.5
   playerFireRate: 0.2
