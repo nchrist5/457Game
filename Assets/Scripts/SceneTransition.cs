@@ -9,7 +9,7 @@ public class SceneTransition : MonoBehaviour
 
 public void playGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(Scene);
     }
 
     public void playTutorial()
