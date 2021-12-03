@@ -5,12 +5,12 @@ using UnityEngine;
 public class Boss : Enemy
 {
     private Rigidbody2D body;
-    private Rigidbody2D laserBody;
+    private Rigidbody2D bosslaserBody;
     private float x;
     private float minDist;
     private float maxDist;
     private float maxY;
-    private float nextFire = 0.0f;
+    private float bossnextFire = 0.0f;
     private Vector3 localScale;
     void Start()
     {
@@ -55,17 +55,17 @@ public class Boss : Enemy
                 }
                 break;
         }
-        if (Time.time > nextFire)
+        if (Time.time > bossnextFire)
         {
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
-            nextFire = Time.time + fireRate;
+            bossnextFire = Time.time + fireRate;
             Vector3 shot = new Vector3(transform.position.x, 1);
             GameObject Laser = Instantiate(LaserProjectile, shot, transform.rotation) as GameObject;
-            laserBody = Laser.GetComponent<Rigidbody2D>();
+            bosslaserBody = Laser.GetComponent<Rigidbody2D>();
             Vector2 force = new Vector2(0, -4);
-            laserBody.AddForce(force * laser_speed);
-            //laserBody.AddForce(direction * laser_speed, ForceMode2D.Impulse);
+            bosslaserBody.AddForce(force * laser_speed);
+            //bosslaserBody.AddForce(direction * laser_speed, ForceMode2D.Impulse);
         }
 
     }

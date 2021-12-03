@@ -5,9 +5,14 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - playerFirePoint: {instanceID: 0}
-  - LaserProjectile: {instanceID: 0}
-  - shotgunProjectile: {instanceID: 0}
-  - grenadeProjectile: {instanceID: 0}
+  - LaserProjectile: {fileID: 7744196406864173931, guid: 28b9249edb74f6b4cbb985fc20d7a148,
+      type: 3}
+  - shotgunProjectile: {fileID: 7744196406864173931, guid: d9d6bebd14a221e4e8dcca263c8f8a05,
+      type: 3}
+  - grenadeProjectile: {fileID: 7744196406864173931, guid: 2ae3cd5aab8cb614698c4181b75a7977,
+      type: 3}
+  - railgunProjectile: {fileID: 7744196406864173931, guid: bf7ad40b8966b9943ba7ff30411126c7,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
