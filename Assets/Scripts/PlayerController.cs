@@ -91,25 +91,25 @@ public class PlayerController : MonoBehaviour
 
         if (other.tag == "NorthWall")
         {
-            pos[1] = -4.5f;
+            pos[1] = -4.2f;
             transform.position = pos;
         }
 
         if (other.tag == "SouthWall")
         {
-            pos[1] = 4.5f;
+            pos[1] = 4.2f;
             transform.position = pos;
         }
 
         if (other.tag == "WestWall")
         {
-            pos[0] = 8.4f;
+            pos[0] = 8.2f;
             transform.position = pos;
         }
 
         if (other.tag == "EastWall")
         {
-            pos[0] = -8.4f;
+            pos[0] = -8.2f;
             transform.position = pos;
         }
         if (other.tag == "TutorialCheckpoint")
@@ -146,6 +146,6 @@ public class PlayerController : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(shield);
         GetComponent<SpriteRenderer>().color = Color.white;
-        immunityOn = false;
+        //immunityOn = false;
     }
 }
