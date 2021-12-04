@@ -10,7 +10,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (PlayerWeapon.railgun == true)
         {
-            damage = damageMax.RuntimeValue + 20;
+            damage = damageMax.RuntimeValue + 40;
         } else {
             damage = damageMax.RuntimeValue;
         }
