@@ -245,7 +245,7 @@ MonoBehaviour:
     type: 3}
   laser_speed: 17.5
   playerFireRate: 0.2
-  throwForce: 3
+  throwForce: 4
 --- !u!60 &4235914710710215682
 PolygonCollider2D:
   m_ObjectHideFlags: 0

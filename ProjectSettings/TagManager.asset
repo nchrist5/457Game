@@ -16,6 +16,7 @@ TagManager:
   - TutorialCheckpoint
   - HealthPickup
   - Music
+  - PlayerGrenadeProjectile
   layers:
   - Default
   - TransparentFX

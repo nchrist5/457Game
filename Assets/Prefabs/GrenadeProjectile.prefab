@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7833362454753249308}
   m_Layer: 9
   m_Name: GrenadeProjectile
-  m_TagString: PlayerProjectile
+  m_TagString: PlayerGrenadeProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c7e3f8300a9cf4bb9400a785f916a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionEffect: {fileID: 100000, guid: 4cbb34f609dafad4586aaa018b8c2ba0, type: 3}
+  ExplosionEffect: {fileID: 7682864357355841723, guid: b2f761f4075f3ab41a1f96b467362c77,
+    type: 3}
   Delay: 1
-  GrenadeRadius: 5000
-  ExplosionForce: 7000
+  GrenadeRadius: 2
   Damage: 60

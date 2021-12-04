@@ -7,10 +7,10 @@ public class Grenade : MonoBehaviour
     private bool hasExplosed;
 
     public GameObject ExplosionEffect;
-    public float Delay = 3f;
-    public float GrenadeRadius = 5000f;
-    public float ExplosionForce = 7000f;
+    public float Delay = 1f;
+    public int GrenadeRadius = 5000;
     public float Damage = 60f;
+    private float explosionEffectDelay = 1f;
 
     void Start()
     {
@@ -31,21 +31,22 @@ public class Grenade : MonoBehaviour
 
     private void Explode()
     {
-        Instantiate(ExplosionEffect, transform.position, transform.rotation);
-        Collider[] touchedObjects = Physics.OverlapSphere(transform.position, GrenadeRadius).Where(x => x.tag == "Enemy").ToArray();
+        
+        GameObject effect = Instantiate(ExplosionEffect, transform.position, transform.rotation);
+        Collider2D[] touchedObjects = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), GrenadeRadius).Where(x => x.tag == "Enemy").ToArray();
 
-        foreach (Collider touchedObject in touchedObjects)
+        foreach (Collider2D touchedObject in touchedObjects)
         {
-            Rigidbody rigidbody = touchedObject.GetComponent<Rigidbody>();
-            if (rigidbody != null)
-            {
-                rigidbody.AddExplosionForce(ExplosionForce, transform.position, GrenadeRadius);
-            }
-
+            Debug.Log("Collision");
+            Enemy enemyScript = touchedObject.gameObject.GetComponent<Enemy>();
+            Rigidbody2D rigidbody = touchedObject.GetComponent<Rigidbody2D>();
             var target = touchedObject.gameObject.GetComponent<Enemy>();
             target.takeDamage(Damage);
 
         }
         Destroy(gameObject);
+        Destroy(effect, explosionEffectDelay);
     }
+
+
 }
