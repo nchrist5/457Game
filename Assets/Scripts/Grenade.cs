@@ -48,5 +48,16 @@ public class Grenade : MonoBehaviour
         Destroy(effect, explosionEffectDelay);
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Transform rootT = other.gameObject.transform.root;
+        GameObject go = rootT.gameObject;
+        if (!(go.CompareTag("Player") || go.CompareTag("EnemyProjectile") || go.CompareTag("PlayerProjectile")))
+        {
+            countDown = 0f;
+        }
+
+    }
+
 
 }
