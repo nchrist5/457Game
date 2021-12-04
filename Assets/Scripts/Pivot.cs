@@ -7,6 +7,7 @@ public class Pivot : MonoBehaviour
     public GameObject crosshair;
     public GameObject player;
     private Vector3 target;
+    public static float shipRot;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -19,6 +20,6 @@ public class Pivot : MonoBehaviour
         difference.Normalize();
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg - 90;
         player.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
-    
+        shipRot = rotationZ;
     }
 }
