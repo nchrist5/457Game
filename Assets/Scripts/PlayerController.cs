@@ -146,6 +146,6 @@ public class PlayerController : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(shield);
         GetComponent<SpriteRenderer>().color = Color.white;
-        //immunityOn = false;
+        immunityOn = false;
     }
 }
