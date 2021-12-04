@@ -243,9 +243,13 @@ MonoBehaviour:
     type: 3}
   grenadeProjectile: {fileID: 7744196406864173931, guid: 2ae3cd5aab8cb614698c4181b75a7977,
     type: 3}
+  railgunProjectile: {fileID: 7744196406864173931, guid: bf7ad40b8966b9943ba7ff30411126c7,
+    type: 3}
   laser_speed: 17.5
   playerFireRate: 0.2
   throwForce: 4
+  railgunFireRate: 1
+  grenadeFireRate: 0.5
 --- !u!60 &4235914710710215682
 PolygonCollider2D:
   m_ObjectHideFlags: 0

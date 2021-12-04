@@ -8,7 +8,13 @@ public class PlayerProjectile : MonoBehaviour
     public float damage;
     public void Awake()
     {
-        damage = damageMax.RuntimeValue;
+        if (PlayerWeapon.railgun == true)
+        {
+            damage = damageMax.RuntimeValue + 40;
+        } else {
+            damage = damageMax.RuntimeValue;
+        }
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
