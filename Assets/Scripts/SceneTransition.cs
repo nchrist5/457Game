@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
 
 public void playGame()
     {
+        Cursor.visible = false;
         SceneManager.LoadScene(Scene);
     }
 
