@@ -18,11 +18,11 @@ public class PlayerWeapon : MonoBehaviour
 
     private float playerNextFire = 0.0f;
 
-    public static bool defaultWeapon = false;
+    public static bool defaultWeapon = true;
     public static bool upgrade = false;
     public static bool railgun = false;
     public static bool shotgun = false;
-    public static bool grenade = true;
+    public static bool grenade = false;
 
     //shotgun gameobjects; declared to make unity happy
     GameObject sg0;
