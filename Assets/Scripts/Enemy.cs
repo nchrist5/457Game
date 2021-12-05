@@ -82,12 +82,14 @@ public class Enemy : MonoBehaviour
         {
             float damageTaken = other.GetComponent<PlayerProjectile>().damage;
             health -= damageTaken;
+            StartCoroutine(damaged());
         }
     }
 
     public void takeDamage(float damage)
     {
         health -= damage;
+        StartCoroutine(damaged());
     }
     public void Spawn()
     {
@@ -100,5 +102,12 @@ public class Enemy : MonoBehaviour
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(effect, deathEffectDelay);
         }
+    }
+
+    IEnumerator damaged()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

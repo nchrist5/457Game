@@ -1,4 +1,6 @@
 ﻿using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Grenade : MonoBehaviour
@@ -45,6 +47,7 @@ public class Grenade : MonoBehaviour
 
         }
         Destroy(gameObject);
+        
         Destroy(effect, explosionEffectDelay);
     }
 
