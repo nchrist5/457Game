@@ -1002,6 +1002,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5df1299c38a2947881c8cec3d49108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4758362074336042291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758362074336042288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c45454c8c27a84ab01768dc1bb63e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMax: {fileID: 0}
+  shieldMax: {fileID: 0}
+  healthMax: {fileID: 0}
 --- !u!224 &4758362074336042293 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4758362075742255188, guid: a2200314ba4254f0dab24c0cbd4927ad,
