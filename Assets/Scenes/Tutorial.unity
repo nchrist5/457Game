@@ -703,10 +703,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lets try moving towards the spacehub on your left.
+  m_Text: 'Lets try moving towards the spacehub on your left. Think outside of the
+    box!
 
-    Once you get there,
-    be aware of enemies! Good Luck!'
+    Once you get there, be aware of enemies! Good Luck!'
 --- !u!222 &785574860
 CanvasRenderer:
   m_ObjectHideFlags: 0
