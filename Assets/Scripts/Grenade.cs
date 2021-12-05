@@ -7,17 +7,15 @@ public class Grenade : MonoBehaviour
 {
     private float countDown;
     private bool hasExplosed;
-
+    public FloatValue damageMax;
     public GameObject ExplosionEffect;
     public float Delay = 1f;
     public int GrenadeRadius = 5000;
-    public float Damage = 60f;
     private float explosionEffectDelay = 1f;
 
     void Start()
     {
         countDown = Delay;
-
     }
 
     // Update is called once per frame
@@ -40,10 +38,9 @@ public class Grenade : MonoBehaviour
         foreach (Collider2D touchedObject in touchedObjects)
         {
             Debug.Log("Collision");
-            Enemy enemyScript = touchedObject.gameObject.GetComponent<Enemy>();
             Rigidbody2D rigidbody = touchedObject.GetComponent<Rigidbody2D>();
             var target = touchedObject.gameObject.GetComponent<Enemy>();
-            target.takeDamage(Damage);
+            target.takeDamage(damageMax.RuntimeValue + 40);
 
         }
         Destroy(gameObject);
