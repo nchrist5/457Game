@@ -37,7 +37,6 @@ public class Grenade : MonoBehaviour
 
         foreach (Collider2D touchedObject in touchedObjects)
         {
-            Debug.Log("Collision");
             Rigidbody2D rigidbody = touchedObject.GetComponent<Rigidbody2D>();
             var target = touchedObject.gameObject.GetComponent<Enemy>();
             target.takeDamage(damageMax.RuntimeValue + 40);

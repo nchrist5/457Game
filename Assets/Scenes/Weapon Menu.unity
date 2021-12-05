@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_Text
-      value: Shot Gun
+      value: Shotgun
       objectReference: {fileID: 0}
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
@@ -278,6 +278,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: -584.85657
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
@@ -757,9 +767,7 @@ PrefabInstance:
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_Text
-      value: 'Grenade
-
-'
+      value: Grenade Launcher
       objectReference: {fileID: 0}
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
@@ -878,6 +886,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -942,6 +960,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 10ebfecc43af2499580cb2f971636740,
         type: 3}
+    - target: {fileID: 9093098147542776391, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 65
+      objectReference: {fileID: 0}
     - target: {fileID: 9093098147542776391, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1109,7 +1132,7 @@ PrefabInstance:
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_Text
-      value: Rail Gun
+      value: Railgun
       objectReference: {fileID: 0}
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
@@ -1225,6 +1248,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: -622.6291
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
@@ -1413,7 +1446,7 @@ PrefabInstance:
     - target: {fileID: 5849691906583051411, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_Text
-      value: 'Laser Beam
+      value: 'Laser Upgrade
 
 '
       objectReference: {fileID: 0}
@@ -1539,6 +1572,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768946935501542252, guid: 50cda5ff52cef4b829955da5347b02c3,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1611,7 +1654,7 @@ PrefabInstance:
     - target: {fileID: 9093098147542776391, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 44.583656
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 9093098147542776391, guid: 50cda5ff52cef4b829955da5347b02c3,
         type: 3}
