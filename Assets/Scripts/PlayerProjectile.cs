@@ -10,11 +10,9 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (PlayerWeapon.railgun == true)
         {
-            damage = damageMax.RuntimeValue + 40;
+            damage = (damageMax.RuntimeValue + 10) * 2;
         }
-        else if (PlayerWeapon.grenade == true){
-            damage = damageMax.RuntimeValue + 40;
-        }
+
         else {
             damage = damageMax.RuntimeValue;
         }
