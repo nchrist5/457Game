@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c7e3f8300a9cf4bb9400a785f916a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageMax: {fileID: 11400000, guid: 731d5f5d81ccb08448d0c779c085e759, type: 2}
   ExplosionEffect: {fileID: 7682864357355841723, guid: b2f761f4075f3ab41a1f96b467362c77,
     type: 3}
   Delay: 1
   GrenadeRadius: 2
-  Damage: 60
