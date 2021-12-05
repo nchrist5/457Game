@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe62bb04bc9d2204fa48bafd0d2f3fba, type: 3}
   m_Name: Player shield
   m_EditorClassIdentifier: 
-  initialValue: 1
-  RuntimeValue: 1
+  initialValue: 0.5
+  RuntimeValue: 0.5

@@ -16,5 +16,6 @@ public class Explosion : MonoBehaviour
             gameObject.SetActive(true);
             myCollider.enabled = !myCollider.enabled;
         }
+        Debug.Log("Collider.enabled = " + myCollider.enabled);
     }
 }

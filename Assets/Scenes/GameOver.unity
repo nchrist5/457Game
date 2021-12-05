@@ -294,7 +294,6 @@ GameObject:
   - component: {fileID: 1401237559}
   - component: {fileID: 1401237558}
   - component: {fileID: 1401237557}
-  - component: {fileID: 1401237560}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -365,8 +364,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1401237560}
-        m_MethodName: LoadGame
+      - m_Target: {fileID: 1500184337}
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1500184338}
+        m_MethodName: playGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -413,18 +423,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401237555}
   m_CullTransparentMesh: 0
---- !u!114 &1401237560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401237555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579e5d22024354ed58311f4e1c335f39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1500184331
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +436,8 @@ GameObject:
   - component: {fileID: 1500184333}
   - component: {fileID: 1500184332}
   - component: {fileID: 1500184336}
+  - component: {fileID: 1500184337}
+  - component: {fileID: 1500184338}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -538,6 +538,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5df1299c38a2947881c8cec3d49108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1500184337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500184331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c45454c8c27a84ab01768dc1bb63e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMax: {fileID: 11400000, guid: 0e58753ffc054f24b8dfa1190c39537f, type: 2}
+  shieldMax: {fileID: 11400000, guid: 65938c5d61ea89a4aab36815b7ff2285, type: 2}
+  healthMax: {fileID: 11400000, guid: a21bcd7b2d621eb419016b9aebb307d7, type: 2}
+--- !u!114 &1500184338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500184331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c95e65b215c440499c519e29505bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: Home
 --- !u!1 &1803590209
 GameObject:
   m_ObjectHideFlags: 0
