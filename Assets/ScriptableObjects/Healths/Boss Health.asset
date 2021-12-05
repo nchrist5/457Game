@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe62bb04bc9d2204fa48bafd0d2f3fba, type: 3}
   m_Name: Boss Health
   m_EditorClassIdentifier: 
-  initialValue: 200
-  RuntimeValue: 200
+  initialValue: 1000
+  RuntimeValue: 1000
