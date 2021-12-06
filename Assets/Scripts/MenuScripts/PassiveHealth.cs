@@ -9,6 +9,6 @@ public class PassiveHealth : MonoBehaviour
     // Update is called once per frame
     public void IncreaseHealth()
     {
-        healthMax.RuntimeValue += 10;
+        healthMax.RuntimeValue = healthMax.RuntimeValue += 10;
     }
 }

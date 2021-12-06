@@ -8,6 +8,6 @@ public class PassiveShield : MonoBehaviour
 
     public void IncreaseSheild()
     {
-        shieldMax.RuntimeValue += 0.5f;
+        shieldMax.RuntimeValue = shieldMax.RuntimeValue += 0.5f;
     }
 }

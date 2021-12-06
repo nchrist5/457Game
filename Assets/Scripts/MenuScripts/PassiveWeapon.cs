@@ -8,6 +8,6 @@ public class PassiveWeapon : MonoBehaviour
 
     public void IncreaseDamage()
     {
-        damageMax.RuntimeValue += 10;
+        damageMax.RuntimeValue = damageMax.RuntimeValue += 10;
     }
 }

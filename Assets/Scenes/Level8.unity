@@ -1558,6 +1558,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3426069261513194663, guid: 1087962fc7490104b9b04abdade0361e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2020754900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1087962fc7490104b9b04abdade0361e, type: 3}
 --- !u!4 &1025634621 stripped
@@ -1688,43 +1693,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
+      propertyPath: waves.Array.data[0].timer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
+        type: 3}
+      propertyPath: waves.Array.data[1].timer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
+        type: 3}
       propertyPath: waves.Array.data[2].timer
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[3].timer
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[4].timer
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[5].timer
-      value: 25
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[6].timer
-      value: 30
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[7].timer
-      value: 35
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[8].timer
-      value: 40
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
       propertyPath: waves.Array.data[9].timer
-      value: 45
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1000788566797339460, guid: 80a363ad5a49c804698620c43cb6c602,
         type: 3}
@@ -2071,6 +2086,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3426069261513194663, guid: 1087962fc7490104b9b04abdade0361e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2020754900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1087962fc7490104b9b04abdade0361e, type: 3}
 --- !u!4 &1425644601 stripped
@@ -2163,6 +2183,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3426069261513194663, guid: 1087962fc7490104b9b04abdade0361e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2020754900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1087962fc7490104b9b04abdade0361e, type: 3}
 --- !u!4 &1656752270 stripped
