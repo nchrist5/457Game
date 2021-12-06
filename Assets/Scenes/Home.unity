@@ -459,7 +459,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 813ddf6042b1f8144a86f05c3e5b457b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -736,6 +736,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 414236989040555048, guid: a2200314ba4254f0dab24c0cbd4927ad,
         type: 3}
+      propertyPath: m_Text
+      value: Space Blast
+      objectReference: {fileID: 0}
+    - target: {fileID: 414236989040555048, guid: a2200314ba4254f0dab24c0cbd4927ad,
+        type: 3}
       propertyPath: m_Color.b
       value: 0.745283
       objectReference: {fileID: 0}
@@ -749,6 +754,12 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.56599325
       objectReference: {fileID: 0}
+    - target: {fileID: 414236989040555048, guid: a2200314ba4254f0dab24c0cbd4927ad,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75,
+        type: 3}
     - target: {fileID: 414236989040555048, guid: a2200314ba4254f0dab24c0cbd4927ad,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
