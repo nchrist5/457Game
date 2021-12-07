@@ -39,7 +39,7 @@ public class Grenade : MonoBehaviour
         {
             Rigidbody2D rigidbody = touchedObject.GetComponent<Rigidbody2D>();
             var target = touchedObject.gameObject.GetComponent<Enemy>();
-            target.takeDamage(damageMax.RuntimeValue * 2 + 10);
+            target.takeDamage(damageMax.RuntimeValue * 2 + 20);
 
         }
         Destroy(gameObject);
