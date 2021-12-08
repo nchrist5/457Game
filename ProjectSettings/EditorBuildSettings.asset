@@ -42,9 +42,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: c967346210a09be45a3c7116fad9f817
   - enabled: 1
-    path: Assets/Scenes/Passive Menu.unity
-    guid: 23cf2e6bff665404181f1ff45974f957
-  - enabled: 1
     path: Assets/Scenes/Passive Menu1-2.unity
     guid: 154a7efe282ba0440b15480ec39864b2
   - enabled: 1
