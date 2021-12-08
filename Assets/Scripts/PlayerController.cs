@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        Cursor.visible = false;
         immunityOn = false;
     }
 

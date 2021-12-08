@@ -14,6 +14,7 @@ public class WaveSystem : MonoBehaviour
 
     public void Start()
     {
+        Cursor.visible = false;
         transitionTime = 1f;
     }
 

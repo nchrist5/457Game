@@ -1199,7 +1199,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "CONTROLS\nMove your crosshair using the mouse. \nMove towards your crosshair
-    with W\nFire with left click."
+    with W.\nFire by holding the left mouse button."
 --- !u!222 &1209795109
 CanvasRenderer:
   m_ObjectHideFlags: 0

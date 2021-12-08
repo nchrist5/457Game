@@ -501,9 +501,9 @@ GameObject:
   - component: {fileID: 512835588}
   - component: {fileID: 512835587}
   - component: {fileID: 512835586}
+  - component: {fileID: 512835591}
   - component: {fileID: 512835590}
   - component: {fileID: 512835589}
-  - component: {fileID: 512835591}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged

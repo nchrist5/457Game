@@ -6,6 +6,11 @@ using UnityEngine;
 public class TutorialCheckpoint : MonoBehaviour
 {
     public Enemy enemy;
+
+     public void Start()
+    {
+        Cursor.visible = false;
+    }
     
 
     // Update is called once per frame

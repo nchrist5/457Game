@@ -472,11 +472,11 @@ GameObject:
   - component: {fileID: 701920179}
   - component: {fileID: 701920178}
   - component: {fileID: 701920177}
+  - component: {fileID: 701920184}
   - component: {fileID: 701920183}
   - component: {fileID: 701920182}
   - component: {fileID: 701920181}
   - component: {fileID: 701920180}
-  - component: {fileID: 701920184}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
